@@ -62,9 +62,7 @@ Data
 -	Put test image in "Segmentation Test" folder
 -	Run Segmentation Test.py
 
-![1](https://user-images.githubusercontent.com/85845544/219785782-dda85e36-68a1-4050-8089-65145ed25f28.png)
-
-![1 (1)](https://user-images.githubusercontent.com/85845544/219785914-eff89cda-e7d5-446b-8105-4dfc9c555b65.png)
+![1](https://user-images.githubusercontent.com/85845544/219785782-dda85e36-68a1-4050-8089-65145ed25f28.png)![1 (1)](https://user-images.githubusercontent.com/85845544/219786401-c1855245-c89a-4e3b-8eb8-b58ab63e8dcd.png)
 
 
 
