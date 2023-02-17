@@ -34,9 +34,6 @@
 -	Using transfer learning with the pre-trained ImageNet weights
 -	Annotation of images
 
-
-![Capture1](https://user-images.githubusercontent.com/85845544/197391026-5b557bc0-319d-435d-b1e0-bedb894362fd.PNG)
-
 # Setup
 ```
 Data
@@ -55,8 +52,6 @@ Data
 ```
 ## Usage
 
-
-
 **Segmentation**
 
 -	If wish to self-train CNN, please follow steps 1 to 4. Otherwise, please download Segmentation model.h5 from step 5.
@@ -67,10 +62,11 @@ Data
 -	Put test image in "Segmentation Test" folder
 -	Run Segmentation Test.py
 
+![1](https://user-images.githubusercontent.com/85845544/219785782-dda85e36-68a1-4050-8089-65145ed25f28.png)
+
+![1 (1)](https://user-images.githubusercontent.com/85845544/219785914-eff89cda-e7d5-446b-8105-4dfc9c555b65.png)
 
 
-
-![predictions ](https://user-images.githubusercontent.com/85845544/197379493-e1580868-cd68-471b-ba76-e1334bfe0647.jpg)
 
 ## Real-time industrial application of segmentation approach
 
