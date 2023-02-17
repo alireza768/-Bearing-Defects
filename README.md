@@ -58,7 +58,7 @@ Data
 -	Put dataset in the folders previously mentioned
 -	Install Tensorflow 2.8.0, Keras 2.8.0, opencv_python-4.5.5.64, albumentations-1.1.0, segmentation_models-1.0.1
 -	Run segmentation train.py and create Segmentation model.h5
--	Download Segmentation model.h5 and put it in "Checkpoints" folder [(Segmentation model)] (https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
+-	Download Segmentation model.h5 and put it in "Checkpoints" folder [(Segmentation model)]
 -	Put test image in "Segmentation Test" folder
 -	Run Segmentation Test.py
 
