@@ -64,8 +64,6 @@ Data
 
 ![1](https://user-images.githubusercontent.com/85845544/219785782-dda85e36-68a1-4050-8089-65145ed25f28.png)![1 (1)](https://user-images.githubusercontent.com/85845544/219786401-c1855245-c89a-4e3b-8eb8-b58ab63e8dcd.png)
 
-
-
 ## Real-time industrial application of segmentation approach
 
 -	Using NVIDIA Developer Kit Jetson Nano 4GB
@@ -73,6 +71,3 @@ Data
 -	Using trained .h5 file in segmentation approach
 -	Using TensorFlow 2.8.0 on NVIDIA Developer Kit Jetson Nano
 -	Using Jetson Nano GPIO to show final results
-
-
-![20220813_130507](https://user-images.githubusercontent.com/85845544/197379046-95c4e241-56b0-4b53-8c7b-b8fd0365ac75.jpg)
