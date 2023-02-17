@@ -1,16 +1,13 @@
-# -Bearing-Defects
-# Conrod bearing dataset
+# Dataset of main bearing surface defects images 
 
-- Being collected from bottom view of four-cylinder engine blocks
-- There are 2 to the power of 4 (means 16) different bearing installation cases (called classes)
-- Containing 2000 images in each 16-class
-- Using an 8MP Raspberry Pi camera for image capture
-- Setting the resolution of images on 3280×2460 pixels
-- Using 8MP Raspberry Pi camera to collect the images
-- Annotating the images in YOLO format
-- Download [**(Classification Data)**](https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
-- Download [**(Detection Data)**](https://drive.google.com/file/d/13qtMvgaqP61M0iQkpjxUt4VBJAKlkvl8/view?usp=sharing)
-- Download [**(Segmentation Data)**](https://drive.google.com/file/d/1AxQGpTHrd4rRwLRwhj3ROJuT0lWSpeG5/view?usp=sharing)
+- Being collected from front view of main bearings of a four-cylinder engine type
+- Containing 500 original images of two bearing surface defects, namely scratching and pitting
+- Using an 12.3MP IMX 277 Jetson Nano Camera for images capture
+- Using 6mm wide lens for setting the focus
+- Designing a proper lighting configuration for imaging
+- Annotating the images for semantic segmentation with 
+- PixelAnnotationTool_x64_v1.3.2 software
+- Download [** Data**](https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
 
 ![Capture](https://user-images.githubusercontent.com/85845544/197382474-270632ca-1a53-483b-abfa-61344cb1d571.JPG)
 
