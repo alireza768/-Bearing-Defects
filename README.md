@@ -24,6 +24,8 @@
 -	HueSaturationValue
 -	Lamda
 
+![666](https://user-images.githubusercontent.com/85845544/219784654-376ca2c5-cc4f-4ef6-bb85-1fcfbd9cf1f3.jpg)
+
 # Approach
 
 -	Enlarging training dataset by combination of Sobel filter and 8 transformations
