@@ -7,40 +7,30 @@
 - Designing a proper lighting configuration for imaging
 - Annotating the images for semantic segmentation with 
 - PixelAnnotationTool_x64_v1.3.2 software
-- Download [** Data**](https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
+- Download [(** Data**)](https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
 
 ![Capture](https://user-images.githubusercontent.com/85845544/197382474-270632ca-1a53-483b-abfa-61344cb1d571.JPG)
 
 # Preprocessing
 
-**Traditional data augmentation**
-- 15° clockwise rotation
-- 15° counterclockwise rotation
-- 30° clockwise rotation
-- 30° counterclockwise rotation
-- Horizontal flip
-- Noise
-- Gaussian filter
-
-**Deep learning-based filters**
-- Dexi-Ned
-- Phase Stretch Transform
+-	Sobel filter
+** 	Data Augmentation (DA) technique including the following transformations:
+- Horizantalflip
+-	GaussianNoise
+-	IAAPerspective
+-	Gamma
+-	Sharpen
+-	Contrast
+-	HueSaturationValue
+-	Lamda
 
 # Approach
 
-**Classification**
-- Architecture selection
-- Transfer learning
-- Dexi-Ned / Phase Stretch Transform
-- Traditional data augmentation
+-	Enlarging training dataset by combination of Sobel filter and 8 transformations
+-	Using Unet with MobileNet architecture as backbone
+-	Using transfer learning with the pre-trained ImageNet weights
+-	Annotation of images
 
-**Segmentation**
-- Annotation of images
-- Architecture selection
-
-**Detection**
-- Annotation of images
-- Architecture selection
 
 ![Capture1](https://user-images.githubusercontent.com/85845544/197391026-5b557bc0-319d-435d-b1e0-bedb894362fd.PNG)
 
@@ -48,28 +38,6 @@
 ```
 Data
  |-- checkpoints
- |  |-- Classification 
- |  |  |-- Xception model.h5
- |  |-- Segmentation 
- |  |  |-- segmentation model.h5
- |-- Classification Data
- |  |-- Classification Train
- |  |  |-- 1
- |  |  |-- 2
- |  |  |-- 3
-        ...
-        ...
-        ...
- |  |  |-- 16
- |  |-- Classification Validation
- |  |  |-- 1
- |  |  |-- 2
- |  |  |-- 3
-        ...
-        ...
-        ...
- |  |  |-- 16
- |  |-- Classification Test
  |-- Segmentation Data
  |  |-- segmentation Train
  |  |  |-- Images
@@ -84,30 +52,30 @@ Data
 ```
 ## Usage
 
-**Classification**
-- Download Xception model.h5 and put it in "Checkpoints" folder [**(Xception model)**](https://drive.google.com/file/d/1pkuIa-d7a8mNGxbwka7QeBu-W3zoBXpZ/view?usp=sharing)
-- Put test image in "Classification Test" folder
-- Run Classification Test.py
+
 
 **Segmentation**
-- Download Segmentation model.h5 and put it in "Checkpoints" folder [**(Segmentation model)**](https://drive.google.com/file/d/1Lgp7sLMFQNq0uQMpmch66KbsrDpPzbk_/view?usp=sharing)
-- Put test image in "Segmentation Test" folder
-- Run Segmentation Test.py
 
-**Detection**
+-	If wish to self-train CNN, please follow steps 1 to 4. Otherwise, please download Segmentation model.h5 from step 5.
+-	Put dataset in the folders previously mentioned
+-	Install Tensorflow 2.8.0, Keras 2.8.0, opencv_python-4.5.5.64, albumentations-1.1.0, segmentation_models-1.0.1
+-	Run segmentation train.py and create Segmentation model.h5
+-	Download Segmentation model.h5 and put it in "Checkpoints" folder (Segmentation model)
+-	Put test image in "Segmentation Test" folder
+-	Run Segmentation Test.py
 
-- Download "Yolov4" folder and put it in Google Drive [**(Yolov4)**](https://drive.google.com/drive/folders/1EDUZ6yi2qUP65OGfx7cfDpPRSNAvPrPe?usp=sharing)
-- Create a "Bearing_test_images" folder in Google Drive and put a custom image in this folder
-- Run Detection Test.ipynb
+
+
 
 ![predictions ](https://user-images.githubusercontent.com/85845544/197379493-e1580868-cd68-471b-ba76-e1334bfe0647.jpg)
 
-## Real-time industrial application of classification approach
+## Real-time industrial application of segmentation approach
 
-- Using Raspberry Pi4 8GB board
-- Using 8MP v2 Raspberry Pi camera
-- Using trained .h5 file in classification approach
-- Using TensorFlow Lite on Raspberry Pi
-- Using Raspberry Pi GPIO to show final results
+-	Using NVIDIA Developer Kit Jetson Nano 4GB
+-	Using 12.3MP IMX 277 Jetson Nano Camera
+-	Using trained .h5 file in segmentation approach
+-	Using TensorFlow 2.8.0 on NVIDIA Developer Kit Jetson Nano
+-	Using Jetson Nano GPIO to show final results
+
 
 ![20220813_130507](https://user-images.githubusercontent.com/85845544/197379046-95c4e241-56b0-4b53-8c7b-b8fd0365ac75.jpg)
