@@ -18,7 +18,7 @@
 
 ![77](https://user-images.githubusercontent.com/85845544/219801164-554c61c1-3a25-4c67-b41d-a6b850f5ba43.jpg)
 
-** Data Augmentation (DA) technique including the following transformations:
+**Data Augmentation (DA) technique including the following transformations:
 - Horizantalflip
 -	GaussianNoise
 -	IAAPerspective
