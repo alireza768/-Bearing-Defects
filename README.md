@@ -15,6 +15,7 @@
 # Preprocessing
 
 -	Sobel filter
+
 ** 	Data Augmentation (DA) technique including the following transformations:
 - Horizantalflip
 -	GaussianNoise
