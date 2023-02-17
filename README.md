@@ -9,7 +9,8 @@
 - PixelAnnotationTool_x64_v1.3.2 software
 - Download [(** Data**)](https://drive.google.com/file/d/1x1fWg54HHkBc4zABBs3n2Szl6izrwr3n/view?usp=sharing)
 
-![Capture](https://user-images.githubusercontent.com/85845544/197382474-270632ca-1a53-483b-abfa-61344cb1d571.JPG)
+![55](https://user-images.githubusercontent.com/85845544/219785160-e8cd9531-7489-4be4-a9f7-57b396ed61de.jpg)
+
 
 # Preprocessing
 
